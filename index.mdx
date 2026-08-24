@@ -1,20 +1,608 @@
 ---
-title: "Introduction"
-description: "Welcome to your project"
+title: "BrightWay Energy: Smarter Energy Management"
+description: "BrightWay Energy helps you monitor, manage, and reduce your energy consumption. Track usage, set targets, and lower your bills."
+sidebarTitle: "Home"
 ---
 
-Write a short description of your product here. What it does, who it's for, and what they can accomplish with it.
+BrightWay Energy is your all-in-one platform for smarter energy management at home or across your business. From the moment you log in, you can track live consumption, set savings targets, and receive alerts that keep you in control of your costs.Set up your account and connect your first smart meter in under 10 minutes.
+
+<CardGroup cols={2}>
+  <Card title="Energy Management" color="#F97316" icon="chart-bar" href="/energy/overview">
+    \<!DOCTYPE html\>
+
+    \<html lang="en"\>
+
+    \<head\>
+
+      \<meta charset="UTF-8" /\>
+
+      \<meta name="viewport" content="width=device-width, initial-scale=1" /\>
+
+      \<title\>Haris Energy Advisor\</title\>
+
+      \<style\>
+
+        \* \{
+
+          margin: 0;
+
+          padding: 0;
+
+          box-sizing: border-box;
+
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+        \}
+
+        body \{
+
+          background: #0b1220;
+
+          color: #e5e7eb;
+
+          line-height: 1.6;
+
+        \}
+
+        .page \{
+
+          min-height: 100vh;
+
+          display: flex;
+
+          flex-direction: column;
+
+        \}
+
+        header \{
+
+          padding: 16px 24px;
+
+          display: flex;
+
+          justify-content: space-between;
+
+          align-items: center;
+
+          border-bottom: 1px solid #1f2937;
+
+          background: rgba(15, 23, 42, 0.9);
+
+          backdrop-filter: blur(10px);
+
+          position: sticky;
+
+          top: 0;
+
+          z-index: 10;
+
+        \}
+
+        .logo \{
+
+          font-weight: 700;
+
+          letter-spacing: 0.08em;
+
+          font-size: 0.9rem;
+
+          text-transform: uppercase;
+
+          color: #38bdf8;
+
+        \}
+
+        nav a \{
+
+          color: #9ca3af;
+
+          text-decoration: none;
+
+          margin-left: 18px;
+
+          font-size: 0.9rem;
+
+        \}
+
+        nav a:hover \{
+
+          color: #e5e7eb;
+
+        \}
+
+        .hero \{
+
+          padding: 64px 24px 40px;
+
+          max-width: 960px;
+
+          margin: 0 auto;
+
+          text-align: left;
+
+        \}
+
+        .hero-tag \{
+
+          display: inline-block;
+
+          padding: 4px 10px;
+
+          border-radius: 999px;
+
+          border: 1px solid #38bdf8;
+
+          font-size: 0.75rem;
+
+          text-transform: uppercase;
+
+          letter-spacing: 0.12em;
+
+          color: #38bdf8;
+
+          margin-bottom: 16px;
+
+        \}
+
+        .hero h1 \{
+
+          font-size: clamp(2.2rem, 4vw, 3rem);
+
+          margin-bottom: 12px;
+
+        \}
+
+        .hero h1 span \{
+
+          color: #22c55e;
+
+        \}
+
+        .hero p \{
+
+          color: #9ca3af;
+
+          max-width: 640px;
+
+          margin-bottom: 20px;
+
+          font-size: 1rem;
+
+        \}
+
+        .hero-cta \{
+
+          display: flex;
+
+          flex-wrap: wrap;
+
+          gap: 12px;
+
+          margin-top: 8px;
+
+        \}
+
+        .btn \{
+
+          display: inline-flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          padding: 10px 18px;
+
+          border-radius: 999px;
+
+          font-size: 0.9rem;
+
+          text-decoration: none;
+
+          border: 1px solid transparent;
+
+          cursor: pointer;
+
+          transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease,
+
+            transform 0.1s ease;
+
+        \}
+
+        .btn-primary \{
+
+          background: #22c55e;
+
+          color: #022c22;
+
+          font-weight: 600;
+
+        \}
+
+        .btn-primary:hover \{
+
+          background: #16a34a;
+
+          transform: translateY(-1px);
+
+        \}
+
+        .btn-ghost \{
+
+          border-color: #4b5563;
+
+          color: #e5e7eb;
+
+          background: transparent;
+
+        \}
+
+        .btn-ghost:hover \{
+
+          border-color: #9ca3af;
+
+          background: rgba(15, 23, 42, 0.8);
+
+          transform: translateY(-1px);
+
+        \}
+
+        .sections \{
+
+          max-width: 960px;
+
+          margin: 0 auto;
+
+          padding: 24px;
+
+          flex: 1;
+
+        \}
+
+        .section \{
+
+          margin-bottom: 32px;
+
+          padding: 20px;
+
+          border-radius: 16px;
+
+          background: radial-gradient(circle at top left, #1f2937, #020617);
+
+          border: 1px solid #1f2937;
+
+        \}
+
+        .section h2 \{
+
+          font-size: 1.3rem;
+
+          margin-bottom: 10px;
+
+        \}
+
+        .section p \{
+
+          color: #9ca3af;
+
+          font-size: 0.95rem;
+
+          margin-bottom: 12px;
+
+        \}
+
+        .features-grid \{
+
+          display: grid;
+
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+          gap: 16px;
+
+          margin-top: 12px;
+
+        \}
+
+        .feature-card \{
+
+          padding: 14px;
+
+          border-radius: 12px;
+
+          border: 1px solid #1f2937;
+
+          background: rgba(15, 23, 42, 0.9);
+
+        \}
+
+        .feature-card h3 \{
+
+          font-size: 1rem;
+
+          margin-bottom: 6px;
+
+        \}
+
+        .feature-card p \{
+
+          font-size: 0.9rem;
+
+          color: #9ca3af;
+
+        \}
+
+        .highlight \{
+
+          color: #38bdf8;
+
+          font-weight: 600;
+
+        \}
+
+        footer \{
+
+          padding: 16px 24px;
+
+          text-align: center;
+
+          font-size: 0.8rem;
+
+          color: #6b7280;
+
+          border-top: 1px solid #1f2937;
+
+          background: #020617;
+
+        \}
+
+        @media (max-width: 640px) \{
+
+          header \{
+
+            flex-direction: column;
+
+            align-items: flex-start;
+
+            gap: 8px;
+
+          \}
+
+          nav \{
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+          \}
+
+          .hero \{
+
+            padding-top: 40px;
+
+          \}
+
+          .hero-cta \{
+
+            flex-direction: column;
+
+            align-items: flex-start;
+
+          \}
+
+        \}
+
+      \</style\>
+
+    \</head\>
+
+    \<body\>
+
+      \<div class="page"\>
+
+        \<header\>
+
+          \<div class="logo"\>HARIS ENERGY ADVISOR\</div\>
+
+          \<nav\>
+
+            \<a href="#how-it-works"\>How it works\</a\>
+
+            \<a href="#benefits"\>Benefits\</a\>
+
+            \<a href="#contact"\>Contact\</a\>
+
+          \</nav\>
+
+        \</header\>
+
+        \<section class="hero"\>
+
+          \<div class="hero-tag"\>Save on your electric bill\</div\>
+
+          \<h1\>
+
+            Smarter power for
+
+            \<span\>every home\</span\>.
+
+          \</h1\>
+
+          \<p\>
+
+            I help everyday families understand their energy use, cut waste, and lower monthly
+
+            electric bills—without confusing jargon or pressure sales.
+
+          \</p\>
+
+          \<div class="hero-cta"\>
+
+            \<a href="#contact" class="btn btn-primary"\>Request a free bill review\</a\>
+
+            \<a href="#how-it-works" class="btn btn-ghost"\>See how it works →\</a\>
+
+          \</div\>
+
+        \</section\>
+
+        \<main class="sections"\>
+
+          \<section id="how-it-works" class="section"\>
+
+            \<h2\>How it works\</h2\>
+
+            \<p\>
+
+              You send a photo of your latest electric bill. I walk through it with you in plain
+
+              language, show where money is being wasted, and outline simple changes you can make
+
+              right away.
+
+            \</p\>
+
+            \<div class="features-grid"\>
+
+              \<div class="feature-card"\>
+
+                \<h3\>1. Share your bill\</h3\>
+
+                \<p\>Snap a clear photo of your current electric bill and send it securely.\</p\>
+
+              \</div\>
+
+              \<div class="feature-card"\>
+
+                \<h3\>2. Get a breakdown\</h3\>
+
+                \<p\>I explain charges line by line so you actually understand what you’re paying for.\</p\>
+
+              \</div\>
+
+              \<div class="feature-card"\>
+
+                \<h3\>3. Apply a plan\</h3\>
+
+                \<p\>You leave with a simple, realistic action plan to reduce your monthly cost.\</p\>
+
+              \</div\>
+
+            \</div\>
+
+          \</section\>
+
+          \<section id="benefits" class="section"\>
+
+            \<h2\>Why work with Haris\</h2\>
+
+            \<p\>
+
+              I’m not a utility company and I’m not here to sell you a contract. I’m here to be your
+
+              \<span class="highlight"\>energy translator\</span\>—someone on your side who makes this
+
+              stuff simple.
+
+            \</p\>
+
+            \<div class="features-grid"\>
+
+              \<div class="feature-card"\>
+
+                \<h3\>Plain‑language advice\</h3\>
+
+                \<p\>No technical talk. Just clear, direct guidance you can act on today.\</p\>
+
+              \</div\>
+
+              \<div class="feature-card"\>
+
+                \<h3\>Bill‑focused savings\</h3\>
+
+                \<p\>We start with what you already pay and look for realistic ways to lower it.\</p\>
+
+              \</div\>
+
+              \<div class="feature-card"\>
+
+                \<h3\>Built for busy people\</h3\>
+
+                \<p\>Short, focused sessions that respect your time and get to the point.\</p\>
+
+              \</div\>
+
+            \</div\>
+
+          \</section\>
+
+          \<section id="contact" class="section"\>
+
+            \<h2\>Start with a free bill review\</h2\>
+
+            \<p\>
+
+              Ready to see where your money is really going? Send your latest electric bill and I’ll
+
+              reply with a short, clear breakdown and next steps.
+
+            \</p\>
+
+            \<p\>
+
+              \<span class="highlight"\>Contact:\</span\>  
+
+              Email: \<strong\>[youremail@example.com](mailto:youremail@example.com)\</strong\>\<br /\>
+
+              Or message me on \<strong\>Facebook\</strong\> to schedule a quick call.
+
+            \</p\>
+
+          \</section\>
+
+        \</main\>
+
+        \<footer\>
+
+          © 2026 Haris Energy Advisor. All rights reserved.
+
+        \</footer\>
+
+      \</div\>
+
+    \</body\>
+
+    \</html\>
+
+     usage, set efficiency targets, and never miss an important spike.
+  </Card>
+
+  <Card title="Billing" color="#F97316" icon="receipt" href="/billing/overview">
+    View invoices, manage payment methods, and generate detailed usage reports.
+  </Card>
+
+  <Card title="Integrations" color="#F97316" icon="plug" href="/integrations/overview">
+    Connect smart meters, solar panels, and other hardware to BrightWay Energy.
+  </Card>
+</CardGroup>
+
+## How BrightWay Energy works
+
+Getting up and running takes only a few steps. Follow this path to start managing your energy today.
+
+<Steps>
+  <Step title="Connect your meter">
+    Link your smart meter or supported device so BrightWay can begin collecting real-time usage data.
+  </Step>
+  <Step title="Set usage targets">
+    Define daily, weekly, or monthly targets to keep consumption within budget.
+  </Step>
+  <Step title="View your dashboard">
+    Explore live charts and historical trends on your personal dashboard.
+  </Step>
+  <Step title="Get alerts">
+    Enable notifications so you know immediately when usage exceeds your targets.
+  </Step>
+</Steps>
 
 <Tip>
-  Ready to make this your own? Start by editing this page. Update your `docs.json` file to customize your site. Then fill out the [Quickstart](/quickstart) page.
+  Commercial customers can invite team members and assign roles from the Team Management page after completing setup.
 </Tip>
-
-<Card title="Quickstart" icon="rocket" href="/quickstart">
-  This card links to the quickstart page in your project.
-</Card>
-<Card title="Components" icon="puzzle-piece" href="https://mintlify.com/docs/components">
-  Add cards, callouts, steps, tabs, and more to design and structure your pages.
-</Card>
-<Card title="Settings" icon="gear" href="https://mintlify.com/docs/organize/settings">
-  Set your site name, branding, and navigation in the `docs.json` file.
-</Card>

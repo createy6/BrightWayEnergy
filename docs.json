@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "almond",
+  "name": "BrightWay Energy",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#F97316",
+    "light": "#FB923C",
+    "dark": "#EA580C"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -18,20 +18,63 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "groups": [
+      {
+        "group": "Get Started",
+        "icon": "rocket",
+        "pages": [
+          "index",
+          "quickstart",
+          "getting-started/account-setup"
+        ]
+      },
+      {
+        "group": "Energy Management",
+        "icon": "bolt",
+        "pages": [
+          "energy/overview",
+          "energy/monitor-usage",
+          "energy/set-targets",
+          "energy/alerts"
+        ]
+      },
+      {
+        "group": "Billing & Payments",
+        "icon": "credit-card",
+        "pages": [
+          "billing/overview",
+          "billing/view-invoices",
+          "billing/payment-methods",
+          "billing/usage-reports"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "icon": "plug",
+        "pages": [
+          "integrations/overview",
+          "integrations/smart-meters",
+          "integrations/solar-panels"
+        ]
+      },
+      {
+        "group": "Account & Settings",
+        "icon": "gear",
+        "pages": [
+          "account/profile",
+          "account/notifications",
+          "account/team"
+        ]
+      },
+      {
+        "group": "Help",
+        "icon": "circle-question",
+        "pages": [
+          "help/faq",
+          "help/troubleshooting"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -41,32 +84,14 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@brightwayenergy.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/brightwayenergy",
+      "linkedin": "https://linkedin.com/company/brightwayenergy"
     }
   }
 }
